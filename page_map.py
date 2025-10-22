@@ -25,7 +25,14 @@ except Exception as e:
     st.error(f"無法載入資料: {e}")
     st.stop()
 
+# 新增：側邊欄底圖選擇
+basemap_options = ["OpenTopoMap", "Esri.WorldImagery", "CartoDB.DarkMatter"]
+basemap = st.sidebar.selectbox("Basemap (底圖)", basemap_options, index=0)
+
 m = leafmap.Map(center=[0, 0], zoom=2)
+
+# 新增：套用選取的底圖
+m.add_basemap(basemap)
 
 m.add_gdf(
     gdf,
