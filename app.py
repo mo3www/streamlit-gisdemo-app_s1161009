@@ -3,7 +3,7 @@ import pandas as pd
 st.title("Streamlit  Widgets")
 # 1. 把 Widgets 放到側邊攔 (sidebar)
 with st.sidebar:
-st.header("這是側欄")
+ st.header("這是側欄")
 # 選擇框 (Selectbox)
 option = st.selectbox(
 "你最喜歡的 GIS 軟體?",
