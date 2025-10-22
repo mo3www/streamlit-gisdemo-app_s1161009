@@ -8,7 +8,7 @@ import tempfile
 st.set_page_config(layout="wide")
 st.title("Leafmap + GeoPandas")
 
-url = "https://naciscdn.org/naturalearth/110m/cultural/ne_110m_admin_0_countries.zip"
+url = "http://www.unep-wcmc.org/habitats/mountains/region.html/Natural_Earth_vector_data/110m_cultural/ne_110m_admin_0_countries.zip"
 
 st.info("Downloading Natural Earth countries (110m)...")
 try:
