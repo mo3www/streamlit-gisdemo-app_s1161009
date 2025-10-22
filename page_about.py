@@ -12,15 +12,15 @@ with st.sidebar:
 #  (Slider)
  year = st.slider("選擇年份:", 1990, 2030, 2024)
 # 2. 顯示 Widgets 結果
-st.write(f"oöo: {option}")
-st.write(f"oö~o: {year}")
+st.write(f"選擇的軟體是: {option}")
+st.write(f"選擇的年份是: {year}")
 #  (Button)
 if st.button("s!"):
  st.balloons()
-# þNó (File Uploader) - vß!
+#  (File Uploader)
 uploaded_file = st.file_uploader(
-"Nóoö Shapefile (.zip) v GeoTIFF (.tif) v GeoJSON (.json)",
+"上船你的 Shapefile (.zip) 或 GeoTIFF (.tif) 或 GeoJSON (.json)",
 type=["zip", "tif", "json"]
 )
 if uploaded_file is not None:
- st.success(f"oNó: {uploaded_file.name} (//: {uploaded_file.size} bytes)")
+ st.success(f"你上傳了: {uploaded_file.name} (大小: {uploaded_file.size} bytes)")
