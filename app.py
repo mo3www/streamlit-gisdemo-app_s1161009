@@ -4,13 +4,13 @@ st.title("Streamlit  Widgets")
 # 1. 把 Widgets 放到側邊攔 (sidebar)
 with st.sidebar:
  st.header("這是側欄")
-    # 選擇框 (Selectbox)
-    option = st.selectbox( 
-    "你最喜歡的 GIS 軟體?",
-    ("QGIS", "ArcGIS", "ENVI", "GRASS")
-    )
-    # 滑桿 (Slider)
-    year = st.slider("選擇年份:", 1990, 2030, 2024)
+# 選擇框 (Selectbox)
+option = st.selectbox( 
+"你最喜歡的 GIS 軟體?",
+("QGIS", "ArcGIS", "ENVI", "GRASS")
+)
+# 滑桿 (Slider)
+year = st.slider("選擇年份:", 1990, 2030, 2024)
 # 2. 在主頁顯示 Widgets 結果
 st.write(f"你選的軟體是: {option}")
 st.write(f"你選的年份是: {year}")
